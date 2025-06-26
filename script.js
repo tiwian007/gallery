@@ -85,8 +85,6 @@ function showNext() {
     updateModal();
   }
 }
-
-// Load images into gallery
 gallery.innerHTML = images
   .map(
     (img, idx) =>
@@ -104,7 +102,6 @@ gallery.querySelectorAll('img').forEach((img) => {
     }
   });
 });
-
 closeBtn.addEventListener('click', closeModal);
 prevBtn.addEventListener('click', showPrev);
 nextBtn.addEventListener('click', showNext);
